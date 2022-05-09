@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "161289429011",
+    "project_id": "eshraf-16211",
+    "storage_bucket": "eshraf-16211.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:161289429011:android:648d8e9f1752c8e6d0dfe6",
+        "android_client_info": {
+          "package_name": "com.example.eshraf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "161289429011-f2q1679b6omhl104o3c9fj6t8um9r39h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0wpH2aGrk0bRx8vp2OgcCipY4z5CI2r8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "161289429011-f2q1679b6omhl104o3c9fj6t8um9r39h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
