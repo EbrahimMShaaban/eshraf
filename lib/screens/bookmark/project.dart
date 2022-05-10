@@ -128,7 +128,7 @@ class _ProjectBookMarkState extends State<ProjectBookMark> {
                     style: hintStyle3,
                   ),
                   Text(
-                    'الاعضاء :' +
+                    ' عضاء :' +
                         projectModel.memberProjectName!,
 
                     style: hintStyle3,

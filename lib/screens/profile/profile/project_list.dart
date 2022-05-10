@@ -127,7 +127,7 @@ class _CompletedProjectState extends State<CompletedProject> {
                     style: hintStyle3,
                   ),
                   Text(
-                    'الاعضاء :' + projectModel.memberProjectName!,
+                    ' عضاء :' + projectModel.memberProjectName!,
                     style: hintStyle3,
                   ),
                 ],

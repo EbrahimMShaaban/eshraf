@@ -69,7 +69,7 @@ class _FieldListState extends State<FieldList> {
 }
 
 List fields = [
-  'المجال الاول',
+  'المجال  ول',
   'المجال الثاني',
   'المجال الثالث',
   'المجال الرابع',

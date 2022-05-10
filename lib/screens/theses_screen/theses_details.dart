@@ -54,7 +54,7 @@ class _ThesesDetailsState extends State<ThesesDetails> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: white,
-        title: Text('اطروحة',
+        title: Text('ا رسالة',
             style: GoogleFonts.cairo(
               textStyle: const TextStyle(
                   color: blue, fontWeight: FontWeight.bold, fontSize: 28),
@@ -95,7 +95,7 @@ class _ThesesDetailsState extends State<ThesesDetails> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  'اسم الاطروحة:  ' + widget.nameTheses!,
+                                  'اسم   رسالة:  ' + widget.nameTheses!,
                                   style: labelStyle3,
                                 ),
                                 const SizedBox(
@@ -130,7 +130,7 @@ class _ThesesDetailsState extends State<ThesesDetails> {
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   Text(
-                                    'حالة الاطروحة',
+                                    'حالة   رسالة',
                                     style: labelStyle3,
                                   ),
                                   Text(widget.thesesStatus!),
@@ -203,7 +203,7 @@ class _ThesesDetailsState extends State<ThesesDetails> {
                             await launch('https://' + widget.linkTheses!);
                           },
                           child: const Text(
-                            'رابط الاطروحة',
+                            'رابط   رسالة',
                             style: TextStyle(
                                 decoration: TextDecoration.underline,
                                 decorationThickness: 2,
@@ -216,7 +216,7 @@ class _ThesesDetailsState extends State<ThesesDetails> {
                           ? InkWell(
                               onTap: () {
                                 editTheses(context,
-                                    text: 'تعديل اطروحة',
+                                    text: 'تعديل ا رسالة',
                                     indexed: widget.docid,
                                     nameTheses: widget.nameTheses,
                                     linkTheses: widget.linkTheses,
@@ -235,7 +235,7 @@ class _ThesesDetailsState extends State<ThesesDetails> {
                                     color: blue,
                                     size: 15,
                                   ),
-                                  Text('تعديل الاطروحة',
+                                  Text('تعديل   رسالة',
                                       style: TextStyle(
                                           // decoration: TextDecoration.underline,
                                           // decorationThickness: 2,
@@ -252,7 +252,7 @@ class _ThesesDetailsState extends State<ThesesDetails> {
                               onTap: () async {
                                 print(FirebaseAuth.instance.currentUser!.uid);
                                 await showDialogWarning(context,
-                                    text: 'هل انت متأكد من حذف الاطروحة',
+                                    text: 'هل انت متأكد من حذف   رسالة',
                                     ontap: () async {
                                   await FirebaseFirestore.instance
                                       .collection('theses')
@@ -284,7 +284,7 @@ class _ThesesDetailsState extends State<ThesesDetails> {
                                     color: red,
                                     size: 15,
                                   ),
-                                  Text('حذف الاطروحة',
+                                  Text('حذف   رسالة',
                                       style: TextStyle(
                                           // decoration: TextDecoration.underline,
                                           // decorationThickness: 2,
@@ -350,12 +350,12 @@ void editTheses(
                 children: [
                   EidtTextFieldUser(
                     controller: nameTheses1,
-                    hintText: 'اسم الاطروحة',
-                    labelText: "اسم الاطروحة",
+                    hintText: 'اسم   رسالة',
+                    labelText: "اسم   رسالة",
                     scure: false,
                     validator: (value) {
                       if (value.isEmpty) {
-                        return 'برجاءادخال اسم الاطروحة ';
+                        return 'برجاءادخال اسم   رسالة ';
                       }
                     },
                   ),
@@ -363,11 +363,11 @@ void editTheses(
                     controller: linkTheses1,
                     validator: (value) {
                       if (value.isEmpty) {
-                        return 'برجاءادخال رابط الاطروحة ';
+                        return 'برجاءادخال رابط   رسالة ';
                       }
                     },
-                    hintText: 'رابط الاطروحة',
-                    labelText: 'رابط الاطروحة',
+                    hintText: 'رابط   رسالة',
+                    labelText: 'رابط   رسالة',
                     scure: false,
                   ),
                   EidtTextFieldUser(
@@ -453,7 +453,7 @@ void editTheses(
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
                         Text(
-                          'حالة الاطروحة',
+                          'حالة   رسالة',
                           style: labelStyle3,
                         ),
                         Directionality(
@@ -461,7 +461,7 @@ void editTheses(
                           child: SizedBox(
                             child: DropdownButton<String>(
                               hint: Text(
-                                'اختر حالة الاطروحة',
+                                'اختر حالة   رسالة',
                                 style: hintStyle,
                               ),
                               value: thesesStatus,

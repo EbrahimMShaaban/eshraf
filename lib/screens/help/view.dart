@@ -63,11 +63,11 @@ class _HelpScreenState extends State<HelpScreen> {
                   //  TextFieldItem(
                   //    validator: (val){
                   //      if(val.isEmpty){
-                  //        return 'يجب ادخال البريد الالكتروني' ;
+                  //        return 'يجب ادخال البريد  لكتروني' ;
                   //      }
                   //    },
                   //    controller: emailController,
-                  //   labelText: "البريد الالكترونى",
+                  //   labelText: "البريد  لكترونى",
                   //   scure: true,
                   //   hintText: "Reasearsh@ksuedu.sa",
                   // ),
@@ -111,7 +111,7 @@ class _HelpScreenState extends State<HelpScreen> {
                           await AwesomeDialog(
                               context: context,
                               title: "هام",
-                              body: const Text("تم الارسال بنجاح"),
+                              body: const Text("تم  رسال بنجاح"),
                               dialogType: DialogType.SUCCES)
                             .show();
                           Navigator.pop(context);

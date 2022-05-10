@@ -25,7 +25,7 @@ class _SupervisionMemberState extends State<SupervisionMember> {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: white,
-          title: Text('طلبات الاشراف',
+          title: Text('طلبات  شراف',
               style: GoogleFonts.cairo(
                 textStyle: const TextStyle(
                     color: blue, fontWeight: FontWeight.bold, fontSize: 28),

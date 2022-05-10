@@ -208,7 +208,7 @@ class _ChatRoomState extends State<ChatRoom> {
                     ),
                     fillColor: white,
                     filled: true,
-                    hintText: 'اكتب الان',
+                    hintText: 'اكتب  ن',
                     hintStyle: hintStyle,
                     enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),

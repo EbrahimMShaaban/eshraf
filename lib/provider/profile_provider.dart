@@ -237,7 +237,7 @@ class ProfileProvider with ChangeNotifier {
       await AwesomeDialog(
               context: context,
               title: "هام",
-              body: const Text("تم الاضافة بنجاح"),
+              body: const Text("تم  ضافة بنجاح"),
               dialogType: DialogType.SUCCES)
           .show();
     });

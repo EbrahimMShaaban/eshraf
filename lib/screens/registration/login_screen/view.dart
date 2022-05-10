@@ -67,9 +67,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   },
                   validator: (value) {
                     if (value!.isEmpty) {
-                      return 'الرجاء كتابه البريد الالكتروني ';
+                      return 'الرجاء كتابه البريد  الالكتروني ';
                     } else if (value.length < 5) {
-                      return 'الرجاء كتابه البريد الالكتروني بشكل صحيح';
+                      return 'الرجاء كتابه البريد  الالكتروني بشكل صحيح';
                     } else if (!value.toString().contains('@')) {
                       return ' @ يجب ان يحتوي البريد الالكتروني علي  ';
                     } else if (!value
@@ -79,7 +79,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         // !value.toString().contains('ksu.edu.sa') &&
                         !value.toString().contains('@gmail.com')
                     ) {
-                      return ' يجب ان يحتوي البريد الالكتروني علي @std.mans.edu.eg ';
+                      return ' يجب ان يحتوي البريد  الالكتروني علي @std.mans.edu.eg ';
                     }
                   }),
               const SizedBox(

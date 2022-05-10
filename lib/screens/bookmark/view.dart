@@ -61,7 +61,7 @@ class _BookmarkScreenState extends State<BookmarkScreen> {
                   padding:
                   const EdgeInsets.symmetric(horizontal: 10, vertical: 15),
                   child: Text(
-                    'الاطروحات ',
+                    ' الرس ت ',
                     style: bluebold,
                   ),
                 ),

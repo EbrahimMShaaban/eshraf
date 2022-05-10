@@ -67,13 +67,13 @@ class _IncomingSuperMemberState extends State<IncomingSuperMember> {
                                           MainAxisAlignment.spaceEvenly,
                                       children: [
                                         Text(
-                                          'اسم الاطروحة: ' +
+                                          'اسم   رسالة: ' +
                                               snapshot.data!.docs[index]
                                                   ['name'],
                                           style: labelStyle3,
                                         ),
                                         Text(
-                                          'تفاصيل الاطروحة:' +
+                                          'تفاصيل   رسالة:' +
                                               snapshot.data!.docs[index]
                                                   ['description'],
                                           style: hintStyle3,
@@ -103,7 +103,7 @@ class _IncomingSuperMemberState extends State<IncomingSuperMember> {
                                             onPressed: () async {
                                               showDialogWarning(context,
                                                   text:
-                                                      'هل تقبل الاشراف علي هذه علي الاطروحة',
+                                                      'هل تقبل  شراف علي هذه علي   رسالة',
                                                   ontap: () async {
                                                 await FirebaseFirestore.instance
                                                     .collection('super')
@@ -133,7 +133,7 @@ class _IncomingSuperMemberState extends State<IncomingSuperMember> {
                                             onPressed: () async {
                                               showDialogWarning(context,
                                                   text:
-                                                      'هل ترفض الاشراف علي هذه علي الاطروحة',
+                                                      'هل ترفض  شراف علي هذه علي   رسالة',
                                                   ontap: () async {
                                                 await FirebaseFirestore.instance
                                                     .collection('super')

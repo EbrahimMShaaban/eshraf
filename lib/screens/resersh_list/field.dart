@@ -73,7 +73,7 @@ class _FieldListresershState extends State<FieldListresersh> {
 }
 
 List fields = [
-  'المجال الاول',
+  'المجال  ول',
   'المجال الثاني',
   'المجال الثالث',
   'المجال الرابع',

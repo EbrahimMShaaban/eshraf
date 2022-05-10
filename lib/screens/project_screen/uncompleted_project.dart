@@ -101,7 +101,7 @@ class _UnCompletedProjectState extends State<UnCompletedProject> {
                       style: hintStyle3,
                     ),
                     Text(
-                      'الاعضاء:' + project.memberProjectName!,
+                      ' عضاء:' + project.memberProjectName!,
                       style: hintStyle3,
                     ),
                   ],

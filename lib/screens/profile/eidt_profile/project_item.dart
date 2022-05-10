@@ -93,7 +93,7 @@ class ProjectItem extends StatelessWidget {
                                                 style: hintStyle5,
                                               ),
                                               Text(
-                                                'الاعضاء ${snapshot.data!.docs[index]['memberProjectName']}',
+                                                ' عضاء ${snapshot.data!.docs[index]['memberProjectName']}',
                                                 style: hintStyle5,
                                               ),
                                             ],
@@ -264,11 +264,11 @@ void editProject(BuildContext context,
 
                     validator: (value) {
                       if (value.isEmpty) {
-                        return 'برجاءادخال اسماء الاعضاء ';
+                        return 'برجاءادخال اسماء  عضاء ';
                       }
                     },
-                    hintText: 'اسم الاعضاء',
-                    labelText: "الاعضاء",
+                    hintText: 'اسم  عضاء',
+                    labelText: " عضاء",
                     scure: false,
 
                   ),

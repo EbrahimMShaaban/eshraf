@@ -168,7 +168,7 @@ class _CreateMemberProfileState extends State<CreateMemberProfile> {
                                 },
                                 validator: (value) {
                                   if (value.isEmpty) {
-                                    return 'الرجاء ادخال الاسم ';
+                                    return 'الرجاء ادخال  سم ';
                                   }
                                 },
                                 controller: nameuser,
@@ -431,7 +431,7 @@ class _CreateMemberProfileState extends State<CreateMemberProfile> {
                 padding:
                     const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                 child: Text(
-                  'المجالات',
+                  'المج ت',
                   style: labelStyle3,
                 ),
               ),

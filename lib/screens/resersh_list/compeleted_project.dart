@@ -140,7 +140,7 @@ class _CompletedProjectResershState extends State<CompletedProjectResersh> {
                     style: hintStyle3,
                   ),
                   Text(
-                    'الاعضاء :' +
+                    ' عضاء :' +
                         projectModel.memberProjectName!,
 
                     style: hintStyle3,

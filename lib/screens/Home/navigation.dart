@@ -49,7 +49,7 @@ class _NavigationFileState extends State<NavigationFile> {
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home,size: 25,color: white,), label: 'الرئيسية',),
           BottomNavigationBarItem(icon: Image(image: AssetImage('assets/bar-chart.png',),height: 25,color: white,), label: 'مشاريع'),
-          BottomNavigationBarItem(icon: Image(image: AssetImage('assets/newsletter.png'),height: 25,color: white,), label: 'أطروحات'),
+          BottomNavigationBarItem(icon: Image(image: AssetImage('assets/newsletter.png'),height: 25,color: white,), label: 'الرسائل'),
           BottomNavigationBarItem(icon: Image(image: AssetImage('assets/class.png'),height: 25,color: white,), label: 'ندوات'),
         ],
       ),

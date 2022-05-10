@@ -76,15 +76,15 @@ void showDialogTheses(
               child: Column(
                 children: [
                   TextFieldUser(
-                    hintText: 'اسم الاطروحة',
-                    labelText: "اسم الاطروحة",
+                    hintText: 'اسم   رسالة',
+                    labelText: "اسم   رسالة",
                     scure: false,
                     onChanged: (val) {
                       prov.nameTheses = val;
                     },
                     validator: (value) {
                       if (value.isEmpty) {
-                        return 'الرجاءادخال اسم الاطروحة ';
+                        return 'الرجاءادخال اسم   رسالة ';
                       }
                     },
                   ),
@@ -94,11 +94,11 @@ void showDialogTheses(
                       },
                       validator: (value) {
                         if (value.isEmpty) {
-                          return 'الرجاءادخال رابط الاطروحة ';
+                          return 'الرجاءادخال رابط   رسالة ';
                         }
                       },
-                      hintText: 'رابط الاطروحة',
-                      labelText: 'رابط الاطروحة',
+                      hintText: 'رابط   رسالة',
+                      labelText: 'رابط   رسالة',
                       scure: false),
                   TextFieldUser(
                       onChanged: (val) {
@@ -185,7 +185,7 @@ void showDialogTheses(
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
                         Text(
-                          'حالة الاطروحة',
+                          'حالة   رسالة',
                           style: labelStyle3,
                         ),
                         Directionality(
@@ -193,7 +193,7 @@ void showDialogTheses(
                           child: SizedBox(
                             child: DropdownButton<String>(
                               hint: Text(
-                                'اختر حالة الاطروحة',
+                                'اختر حالة   رسالة',
                                 style: hintStyle,
                               ),
                               value: prov.thesesStatus,
@@ -267,7 +267,7 @@ void showDialogTheses(
                   AwesomeDialog(
                           context: context,
                           title: "هام",
-                          body: const Text("تمت عملية الاضافة بنجاح"),
+                          body: const Text("تمت عملية  ضافة بنجاح"),
                           dialogType: DialogType.SUCCES)
                       .show();
                 }
@@ -346,11 +346,11 @@ void showDialogProject(
                       },
                       validator: (value) {
                         if (value.isEmpty) {
-                          return 'الرجاءادخال اسماء الاعضاء ';
+                          return 'الرجاءادخال اسماء  عضاء ';
                         }
                       },
-                      hintText: 'اسم الاعضاء',
-                      labelText: "الاعضاء",
+                      hintText: 'اسم  عضاء',
+                      labelText: " عضاء",
                       scure: false),
                   TextFieldUser(
                       onChanged: (val) {
@@ -452,7 +452,7 @@ void showDialogProject(
                   AwesomeDialog(
                       context: context,
                       title: "هام",
-                      body: const Text("تمت عملية الاضافة بنجاح"),
+                      body: const Text("تمت عملية  ضافة بنجاح"),
                       dialogType: DialogType.SUCCES)
                       .show();
                 }
@@ -488,15 +488,15 @@ void showDialogProject(
 //               child: Column(
 //                 children: [
 //                   TextFieldUser(
-//                     hintText: 'اسم الاطروحة',
-//                     labelText: "اسم الاطروحة",
+//                     hintText: 'اسم   رسالة',
+//                     labelText: "اسم   رسالة",
 //                     scure: false,
 //                     onChanged: (val) {
 //                       prov.nameTheses = val;
 //                     },
 //                     validator: (value) {
 //                       if (value.isEmpty) {
-//                         return 'برجاءادخال اسم الاطروحة ';
+//                         return 'برجاءادخال اسم   رسالة ';
 //                       }
 //                     },
 //                   ),
@@ -506,11 +506,11 @@ void showDialogProject(
 //                       },
 //                       validator: (value) {
 //                         if (value.isEmpty) {
-//                           return 'برجاءادخال رابط الاطروحة ';
+//                           return 'برجاءادخال رابط   رسالة ';
 //                         }
 //                       },
-//                       hintText: 'رابط الاطروحة',
-//                       labelText: 'رابط الاطروحة',
+//                       hintText: 'رابط   رسالة',
+//                       labelText: 'رابط   رسالة',
 //                       scure: false),
 //
 //                   TextFieldUser(
@@ -555,11 +555,11 @@ void showDialogProject(
 //                   //     },
 //                   //     validator: (value) {
 //                   //       if (value.isEmpty) {
-//                   //         return 'برجاءادخال حالة الاطروحة ';
+//                   //         return 'برجاءادخال حالة   رسالة ';
 //                   //       }
 //                   //     },
-//                   //     hintText: 'اختر حالة الاطروحة',
-//                   //     labelText: "حالة الاطروحة",
+//                   //     hintText: 'اختر حالة   رسالة',
+//                   //     labelText: "حالة   رسالة",
 //                   //     scure: false),
 //                   Padding(
 //                     padding: const EdgeInsets.symmetric(vertical: 7.5),
@@ -567,7 +567,7 @@ void showDialogProject(
 //                       crossAxisAlignment: CrossAxisAlignment.end,
 //                       children: [
 //                         Text(
-//                           'حالة الاطروحة',
+//                           'حالة   رسالة',
 //                           style: labelStyle3,
 //                         ),
 //                         Directionality(
@@ -575,7 +575,7 @@ void showDialogProject(
 //                           child: SizedBox(
 //                             child: DropdownButton<String>(
 //                               hint: Text(
-//                                 'اختر حالة الاطروحة',
+//                                 'اختر حالة   رسالة',
 //                                 style: hintStyle,
 //                               ),
 //                               value: prov.thesesStatus,

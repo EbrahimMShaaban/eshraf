@@ -260,7 +260,7 @@ class _MemberProfileState extends State<MemberProfile> {
                                         color: Colors.red,
                                       ),
                                 Text(
-                                  "أقبل الاشراف على الاطروحات ",
+                                  "أقبل  شراف على  الرس ت ",
                                   style: hintStyle,
                                 ),
                               ],
@@ -304,13 +304,13 @@ class _MemberProfileState extends State<MemberProfile> {
                                 isScrollable: true,
                                 tabs: const <Widget>[
                                   Tab(
-                                    text: 'المجالات',
+                                    text: 'المج ت',
                                   ),
                                   Tab(
-                                    text: 'الاطروحات\nالمكتملة',
+                                    text: ' الرس ت\nالمكتملة',
                                   ),
                                   Tab(
-                                    text: 'الاطروحات \nالجارية',
+                                    text: ' الرس ت \nالجارية',
                                   ),
                                   Tab(
                                     text: 'المشاريع\n المكتملة',

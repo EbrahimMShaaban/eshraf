@@ -116,7 +116,7 @@ Widget studentDrawer(BuildContext context) {
                 title: const Align(
                     alignment: Alignment.centerRight,
                     child: Text(
-                      'طلبات الاشراف',
+                      'طلبات  شراف',
                     )),
                 onPressed: () {
                   if(prov.usertype == 0){

@@ -68,7 +68,7 @@ class AuthProvider with ChangeNotifier {
             body: const Directionality(
                 textDirection: TextDirection.rtl,
                 child: Text(
-                    "كلمة المرور ضعيفة يجب ان تتكون علي الاقل من ستة ارقام او حروف")))
+                    "كلمة المرور ضعيفة يجب ان تتكون علي  قل من ستة ارقام او حروف")))
             .show();
       } else if (e.code == 'email-already-in-use') {
         AwesomeDialog(
@@ -76,7 +76,7 @@ class AuthProvider with ChangeNotifier {
             title: "Error",
             dialogType: DialogType.ERROR,
             body: const Text(
-                "البريد الالكتروني موجود بالفعل ، الرجاء ادخال بريد اخر"))
+                "البريد  لكتروني موجود بالفعل ، الرجاء ادخال بريد اخر"))
             .show();
       }
       else if (e.code == 'The email address is already in use by another account.') {
@@ -85,7 +85,7 @@ class AuthProvider with ChangeNotifier {
             title: "Error",
             dialogType: DialogType.ERROR,
             body: const Text(
-                "البريد الالكتروني موجود بالفعل ، الرجاء ادخال بريد اخر"))
+                "البريد  لكتروني موجود بالفعل ، الرجاء ادخال بريد اخر"))
             .show();
       }
     }  catch (e) {
@@ -123,7 +123,7 @@ class AuthProvider with ChangeNotifier {
         AwesomeDialog(
             context: context,
             title: "خطأ",
-            body: const Text("لا يوجد حساب لهذا البريد الالكتروني"))
+            body: const Text("لا يوجد حساب لهذا البريد  لكتروني"))
             .show();
       } else if (e.code == 'wrong-password') {
         Navigator.of(context).pop();
@@ -138,7 +138,7 @@ class AuthProvider with ChangeNotifier {
         AwesomeDialog(
             context: context,
             title: "خطأ",
-            body: const Text("تم ادخال الايميل بشكل خاطيء"))
+            body: const Text("تم ادخال  يميل بشكل خاطيء"))
             .show();
       }
     }

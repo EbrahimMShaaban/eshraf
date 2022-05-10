@@ -125,7 +125,7 @@ class _ThesesScreenState extends State<ThesesScreen> {
         backgroundColor: white,
         appBar: AppBar(
           backgroundColor: white,
-          title: Text('أطروحات',
+          title: Text('الرسائل',
               style: GoogleFonts.cairo(
                 textStyle: const TextStyle(
                     color: blue, fontWeight: FontWeight.bold, fontSize: 28),
@@ -168,7 +168,7 @@ class _ThesesScreenState extends State<ThesesScreen> {
           child: Column(
             children: [
               SearchTextField(
-                text: 'البحث عن اطروحة',
+                text: 'البحث عن رسالة',
                 controller: searchController,
               ),
               Container(

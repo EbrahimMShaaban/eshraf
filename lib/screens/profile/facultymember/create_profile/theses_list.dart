@@ -28,7 +28,7 @@ class _ThesesListState extends State<ThesesList> {
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
           child: Text(
-            "اطروحات تحت اشرافك :",
+            "الرسائل :",
             style: labelStyle3,
           ),
         ),
@@ -81,7 +81,7 @@ class _ThesesListState extends State<ThesesList> {
                                             MainAxisAlignment.spaceEvenly,
                                             children: [
                                               Text(
-                                                  'اسم الاطروحة : ${snapshot.data!.docs[index]['nameTheses']}',
+                                                  'اسم الرسالة : ${snapshot.data!.docs[index]['nameTheses']}',
                                                   style: hintStyle5
                                               ),
                                               Text(
@@ -156,12 +156,12 @@ class _ThesesListState extends State<ThesesList> {
           ],
         ),
         ButtonUser(
-            text: "اضافة اطروحة",
+            text: "اضافة رسالة",
             color: blueGradient,
             onTap: () {
               showDialogTheses(
                 context,
-                text: 'إضافة اطروحة',
+                text: 'إضافة رسالة',
                 college: widget.college!,
                 department: widget.department!,
 

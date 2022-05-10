@@ -17,7 +17,7 @@ class _SupervisionListState extends State<SupervisionList> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: white,
-        title: Text('طلبات الاشراف',
+        title: Text('طلبات  شراف',
             style: GoogleFonts.cairo(
               textStyle: const TextStyle(
                   color: blue, fontWeight: FontWeight.bold, fontSize: 28),
@@ -71,11 +71,11 @@ class _SupervisionListState extends State<SupervisionList> {
                                    MainAxisAlignment.spaceEvenly,
                                    children: [
                                      Text(
-                                       'اسم الاطروحة: '+snapshot.data!.docs[index]['name'],
+                                       'اسم   رسالة: '+snapshot.data!.docs[index]['name'],
                                        style: labelStyle3,
                                      ),
                                      Text(
-                                       'تفاصيل الاطروحة:'+snapshot.data!.docs[index]['description'],
+                                       'تفاصيل   رسالة:'+snapshot.data!.docs[index]['description'],
                                        style: hintStyle3,
                                      ),
                                    ],

@@ -48,7 +48,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 children: [
                   TextFieldRegistation(
                       hintText: 'اسمك',
-                      labelText: "الاسم",
+                      labelText: " الاسم",
                       scure: false,
                       onChanged: (val) {
                         name = val;
@@ -57,7 +57,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         if (value!.isEmpty) {
                           return 'برجاءادخال الاسم';
                         } else if (value.length < 3) {
-                          return 'يجب ان يتكون الاسم علي الاقل من ثلاثة احرف';
+                          return 'يجب ان يتكون  الاسم علي  الاقل من ثلاثة احرف';
                         }
                       }),
                   TextFieldRegistation(
@@ -69,11 +69,11 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       },
                       validator: (value) {
                         if (value!.isEmpty) {
-                          return 'الرجاء كتابه البريد الالكتروني ';
+                          return 'الرجاء كتابه البريد  الالكتروني ';
                         } else if (value.length < 5) {
-                          return 'الرجاء كتابه البريد الالكتروني بشكل صحيح';
+                          return 'الرجاء كتابه البريد  الالكتروني بشكل صحيح';
                         } else if (!value.toString().contains('@')) {
-                          return ' @ يجب ان يحتوي البريد الالكتروني علي  ';
+                          return ' @ يجب ان يحتوي البريد  الالكتروني علي  ';
                         } else if (!validate(value)) {
                           return 'يجب أن لا يبدأ البريد الالكتروني برقم';
                         } else if (!value
@@ -82,7 +82,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             &&
                             //!value.toString().contains('ksu.edu.sa') &&
                             !value.toString().contains('@gmail.com')) {
-                          return ' يجب ان يحتوي البريد الالكتروني علي student@std.mans.edu.eg ';
+                          return ' يجب ان يحتوي البريد  الالكتروني علي student@std.mans.edu.eg ';
                         }
                       }),
                   TextFieldRegistation(
@@ -96,7 +96,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         if (value!.isEmpty) {
                           return 'الرجاء ادخال كلمة المرور ';
                         } else if (value.length < 5) {
-                          return 'يجب ان تتكون كلمة المرور علي الاقل من ثمانيه خانات';
+                          return 'يجب ان تتكون كلمة المرور علي  الاقل من ثمانيه خانات';
                         } else if (!validateStructure(value)) {
                           return 'يجب ان تحتوى كلمة المرور على ثمانيه خانات رقم واحد على الأقل  \n وأحرف الكبيرة وأحرف الصغيرة ورموز @#%&* ';
                         }
@@ -118,7 +118,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           print('================sss==============');
                           return 'كلمة المرور غير متطابقة';
                         } else if (value.length <= 5) {
-                          return 'يجب ان تتكون كلمة المرور علي الاقل من ستة حروف وارقام';
+                          return 'يجب ان تتكون كلمة المرور علي  الاقل من ستة حروف وارقام';
                         }
                       }),
                   Padding(

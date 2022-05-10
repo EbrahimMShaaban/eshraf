@@ -88,7 +88,7 @@ class _SupervisionScreenState extends State<SupervisionScreen> {
         child: Column(
           children: [
             Text(
-              'ارسال طلب اشراف علي اطروحة',
+              'ارسال طلب اشراف علي ا رسالة',
               style: hintStyle3,
             ),
             Container(
@@ -106,20 +106,20 @@ class _SupervisionScreenState extends State<SupervisionScreen> {
                     TextFieldItem(
                         controller: nameController,
                         hintText: 'العنوان',
-                        labelText: "عنوان الاطروحة",
+                        labelText: "عنوان   رسالة",
                         validator: (val) {
                           if (val.isEmpty) {
-                            return 'يجب ادخال عنوان الاطروحة';
+                            return 'يجب ادخال عنوان   رسالة';
                           }
                         },
                         scure: false),
                     TextFieldItem(
                         controller: descriptionController,
                         hintText: 'الوصف',
-                        labelText: "وصف الاطروحة",
+                        labelText: "وصف   رسالة",
                         validator: (val) {
                           if (val.isEmpty) {
-                            return 'يجب ادخال وصف الاطروحة';
+                            return 'يجب ادخال وصف   رسالة';
                           }
                         },
                         scure: false),
@@ -151,7 +151,7 @@ class _SupervisionScreenState extends State<SupervisionScreen> {
                               return AwesomeDialog(
                                   context: context,
                                   title: "هام",
-                                  body: const Text("تم الارسال بنجاح"),
+                                  body: const Text("تم  رسال بنجاح"),
                                   dialogType: DialogType.SUCCES)
                                 ..show();
                             });

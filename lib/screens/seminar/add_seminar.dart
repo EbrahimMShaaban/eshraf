@@ -301,7 +301,7 @@ class _AddSeminarState extends State<AddSeminar> {
                           children: <TextSpan>[
                             TextSpan(
                               text:
-                                  'عند اضافة ندوة قادمة سيتم حذفها تلقائيابعد انتهاء موعدها؛ و يمكنك اضافتهالاحقا كندوة مكتملة لاجل توثيقها',
+                                  'عند اضافة ندوة قادمة سيتم حذفها تلقائيابعد انتهاء موعدها؛ و يمكنك اضافته حقا كندوة مكتملة لاجل توثيقها',
                               style: GoogleFonts.cairo(
                                   textStyle: const TextStyle(
                                       color: Colors.red,

@@ -45,7 +45,7 @@ class _ThesesGraduatedMontorItemState extends State<ThesesGraduatedMontorItem> {
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
           child: Text(
-            "اطروحات تحت اشرافك :",
+            "االرس ت تحت اشرافك :",
             style: labelStyle3,
           ),
         ),
@@ -98,7 +98,7 @@ class _ThesesGraduatedMontorItemState extends State<ThesesGraduatedMontorItem> {
                                                 MainAxisAlignment.spaceEvenly,
                                             children: [
                                               Text(
-                                                'اسم الاطروحة : ${snapshot.data!.docs[index]['nameTheses']}',
+                                                'اسم   رسالة : ${snapshot.data!.docs[index]['nameTheses']}',
                                                 style: hintStyle5
                                               ),
                                               Text(
@@ -135,7 +135,7 @@ class _ThesesGraduatedMontorItemState extends State<ThesesGraduatedMontorItem> {
                                   child: IconButton(
                                     onPressed: () {
                                       editTheses(context,
-                                          text: 'تعديل اطروحة',
+                                          text: 'تعديل ا رسالة',
                                           key: key,
                                           indexed:
                                               snapshot.data!.docs[index].id,
@@ -199,14 +199,14 @@ class _ThesesGraduatedMontorItemState extends State<ThesesGraduatedMontorItem> {
           ],
         ),
         ButtonUser(
-            text: "اضافة اطروحة",
+            text: "اضافة ا رسالة",
             color: blueGradient,
             onTap: () {
               print(widget.college);
               print(widget.department);
               showDialogTheses(
                 context,
-                text: 'إضافة اطروحة',
+                text: 'إضافة ا رسالة',
                 department:widget.department!,
                college: widget.college!);
             }),
@@ -261,12 +261,12 @@ void editTheses(
                 children: [
                   EidtTextFieldUser(
                    controller: nameTheses1,
-                    hintText: 'اسم الاطروحة',
-                    labelText: "اسم الاطروحة",
+                    hintText: 'اسم   رسالة',
+                    labelText: "اسم   رسالة",
                     scure: false,
                     validator: (value) {
                       if (value.isEmpty) {
-                        return 'برجاءادخال اسم الاطروحة ';
+                        return 'برجاءادخال اسم   رسالة ';
                       }
                     },
 
@@ -275,11 +275,11 @@ void editTheses(
                      controller: linkTheses1,
                     validator: (value) {
                       if (value.isEmpty) {
-                        return 'برجاءادخال رابط الاطروحة ';
+                        return 'برجاءادخال رابط   رسالة ';
                       }
                     },
-                    hintText: 'رابط الاطروحة',
-                    labelText: 'رابط الاطروحة',
+                    hintText: 'رابط   رسالة',
+                    labelText: 'رابط   رسالة',
                     scure: false,
 
                   ),
@@ -370,7 +370,7 @@ void editTheses(
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
                         Text(
-                          'حالة الاطروحة',
+                          'حالة   رسالة',
                           style: labelStyle3,
                         ),
                         Directionality(
@@ -378,7 +378,7 @@ void editTheses(
                           child: SizedBox(
                             child: DropdownButton<String>(
                               hint: Text(
-                                'اختر حالة الاطروحة',
+                                'اختر حالة   رسالة',
                                 style: hintStyle,
                               ),
                               value: thesesStatus,

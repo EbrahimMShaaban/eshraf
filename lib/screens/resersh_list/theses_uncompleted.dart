@@ -109,7 +109,7 @@ class _UnComletedThesesListresershState
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    "اسم الاطروحة: " +
+                    "اسم   رسالة: " +
                         theses.nameTheses!,
                     style: labelStyle3,
                   ),

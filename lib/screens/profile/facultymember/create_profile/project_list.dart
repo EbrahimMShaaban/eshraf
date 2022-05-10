@@ -84,7 +84,7 @@ class _ProjectListState extends State<ProjectList> {
                                                 style: hintStyle5,
                                               ),
                                               Text(
-                                                'الاعضاء ${snapshot.data!.docs[index]['memberProjectName']}',
+                                                ' عضاء ${snapshot.data!.docs[index]['memberProjectName']}',
                                                 style: hintStyle5,
                                               ),
                                             ],

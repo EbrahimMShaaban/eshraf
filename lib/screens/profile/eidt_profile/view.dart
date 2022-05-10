@@ -267,7 +267,7 @@ class _EditProfileState extends State<EditProfile> {
                                 if (value.isEmpty) {
                                   return 'يجب ادخال اسم الباحث';
                                 } else if (value.length < 2) {
-                                  return 'يجب ان يحتوي الاسم علي ثلاث حروف علي الاقل';
+                                  return 'يجب ان يحتوي  سم علي ثلاث حروف علي  قل';
                                 }
                                 return null;
                               }, // initialValue: name,
@@ -544,7 +544,7 @@ class _EditProfileState extends State<EditProfile> {
                       Padding(
                         padding: const EdgeInsets.only(right: 20, top: 20),
                         child: Text(
-                          "هل تقبل الاشراف على الاطروحات؟",
+                          "هل تقبل  شراف على  الرس ت؟",
                           style: labelStyle3,
                         ),
                       ),

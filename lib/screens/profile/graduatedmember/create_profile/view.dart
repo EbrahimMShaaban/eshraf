@@ -136,7 +136,7 @@ class _CreateGraduatedProfileState extends State<CreateGraduatedProfile> {
                                     },
                                     validator: (value) {
                                       if (value.isEmpty) {
-                                        return 'برجاء ادخال الاسم ';
+                                        return 'برجاء ادخال  سم ';
                                       }
                                     },
                                     controller: nameuser,
@@ -400,7 +400,7 @@ class _CreateGraduatedProfileState extends State<CreateGraduatedProfile> {
                     padding: const EdgeInsets.symmetric(
                         horizontal: 20, vertical: 10),
                     child: Text(
-                      'المجالات',
+                      'المجلات',
                       style: labelStyle3,
                     ),
                   ),

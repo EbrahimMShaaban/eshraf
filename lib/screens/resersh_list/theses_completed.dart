@@ -104,7 +104,7 @@ class _CompeletedThesesresershState extends State<CompeletedThesesresersh> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    "اسم الاطروحة: " + theses.nameTheses!,
+                    "اسم   رسالة: " + theses.nameTheses!,
 
                     style: labelStyle3,
                     ),

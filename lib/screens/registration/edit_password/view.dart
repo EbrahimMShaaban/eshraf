@@ -90,7 +90,7 @@ class _EditPasswordScreenState extends State<EditPasswordScreen> {
       AwesomeDialog(
           context: context,
           title: "هام",
-          body: const Text("@ إيميل الاستعادة خطأ ،يجب ان يحتوي علي"),
+          body: const Text("@ إيميل  ستعادة خطأ ،يجب ان يحتوي علي"),
           dialogType: DialogType.ERROR)
           .show();
       // Fluttertoast.showToast(msg: "Enter valid email", backgroundColor: blue);
@@ -104,7 +104,7 @@ class _EditPasswordScreenState extends State<EditPasswordScreen> {
         context: context,
         title: "هام",
         body: const Text(
-            "الرجاء التحقق من بريديك الالكتروني لتغيير كلمة المرور"),
+            "الرجاء التحقق من بريديك  لكتروني لتغيير كلمة المرور"),
         dialogType: DialogType.SUCCES)
         .show();
     // Fluttertoast.showToast(

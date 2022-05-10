@@ -71,7 +71,7 @@ class _ProfileInformationState extends State<ProfileInformation> {
                       },
                       validator: (value) {
                         if (value.isEmpty) {
-                          return 'برجاء ادخال الاسم ';
+                          return 'برجاء ادخال  سم ';
                         }
                       },
                       labelText: 'اسم الباحث',

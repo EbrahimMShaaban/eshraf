@@ -93,7 +93,7 @@ class _CompletedThesesState extends State<CompletedTheses> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Text(
-                      'اسم الاطروحة : ' + theses.nameTheses!,
+                      'اسم   رسالة : ' + theses.nameTheses!,
                       maxLines: 1,
                       style:  GoogleFonts.cairo(
                         textStyle: const TextStyle(

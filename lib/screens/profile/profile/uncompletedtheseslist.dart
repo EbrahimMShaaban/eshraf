@@ -104,7 +104,7 @@ class _UnComletedThesesListState extends State<UnComletedThesesList> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    "اسم الاطروحة: " + theses.nameTheses!,
+                    "اسم   رسالة: " + theses.nameTheses!,
                     style: labelStyle3,
                   ),
                   Text(

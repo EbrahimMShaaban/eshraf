@@ -112,7 +112,7 @@ class _ProjectDetailsScreenState extends State<ProjectDetailsScreen> {
                                   height: 5,
                                 ),
                                 Text(
-                                  'االاعضاء:  ' + widget.members,
+                                  'ا عضاء:  ' + widget.members,
                                   style: hintStyle,
                                 ),
                               ],
@@ -390,11 +390,11 @@ void editProject(BuildContext context,
                     controller: memberProjectName1,
                     validator: (value) {
                       if (value.isEmpty) {
-                        return 'برجاءادخال اسماء الاعضاء ';
+                        return 'برجاءادخال اسماء  عضاء ';
                       }
                     },
-                    hintText: 'اسم الاعضاء',
-                    labelText: "الاعضاء",
+                    hintText: 'اسم  عضاء',
+                    labelText: " عضاء",
                     scure: false,
                   ),
                   EidtTextFieldUser(
