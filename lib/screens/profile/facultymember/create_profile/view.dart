@@ -269,7 +269,10 @@ class _CreateMemberProfileState extends State<CreateMemberProfile> {
                                         ]),
                                   ),
                                   onChanged: (newValue) {
-                                    prov.degreeMember = newValue!;
+                                    setState(() {
+                                      prov.degreeMember = newValue!;
+                                    });
+
                                   },
                                   items: <String>[
                                     'دكتوراه',

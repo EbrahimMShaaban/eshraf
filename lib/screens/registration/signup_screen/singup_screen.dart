@@ -96,7 +96,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         if (value!.isEmpty) {
                           return 'الرجاء إدخال كلمة المرور ';
                         } else if (value.length < 5) {
-                          return 'يجب ان تتكون كلمة المرور علي  الاقل من ثمانيه خانات';
+                          return 'يجب ان تتكون كلمة المرور علي  الاقل من ثمانية خانات';
                         } else if (!validateStructure(value)) {
                           return 'يجب ان تحتوى كلمة المرور على ثمانية خانات رقم واحد على الأقل  \n وأحرف كبيرة وأحرف صغيرة ورموز @#%&* ';
                         }
