@@ -48,7 +48,7 @@ class _CreateMemberProfileState extends State<CreateMemberProfile> {
 
 
   List<String> selectedDepartment = <String>[];
-  List<String> selectedDegree = <String>['دكتوراة'];
+  List<String> selectedDegree = <String>['دكتوراه'];
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
 
   ///phonenumber varibles
@@ -102,7 +102,7 @@ class _CreateMemberProfileState extends State<CreateMemberProfile> {
       backgroundColor: white,
       appBar: AppBar(
           backgroundColor: white,
-          title: Text('إنشىء ملفك الشخصي',
+          title: Text('أنشىء ملفك الشخصي',
               style: GoogleFonts.cairo(
                 textStyle: const TextStyle(
                     color: blue, fontWeight: FontWeight.bold, fontSize: 28),
@@ -168,7 +168,7 @@ class _CreateMemberProfileState extends State<CreateMemberProfile> {
                                 },
                                 validator: (value) {
                                   if (value.isEmpty) {
-                                    return 'الرجاء ادخال  سم ';
+                                    return 'الرجاء إدخال اسم ';
                                   }
                                 },
                                 controller: nameuser,
@@ -253,7 +253,7 @@ class _CreateMemberProfileState extends State<CreateMemberProfile> {
                                     const EdgeInsets.symmetric(horizontal: 10),
                                 child: DropdownButton<String>(
                                   hint: Text(
-                                    'ادخل الدرجة العلمية',
+                                    'أدخل الدرجة العلمية',
                                     style: hintStyle,
                                   ),
                                   value: prov.degreeMember,
@@ -334,7 +334,7 @@ class _CreateMemberProfileState extends State<CreateMemberProfile> {
                               controller: email,
                               validator: (value) {
                                 if (value.isEmpty) {
-                                  return 'الرجاءادخال بريدك الجامعي ';
+                                  return 'الرجاءإدخال بريدك الجامعي ';
                                 }
                               },
                               // initialValue: widget.email,
@@ -354,8 +354,8 @@ class _CreateMemberProfileState extends State<CreateMemberProfile> {
                                   return 'برجاءادخال رابط GooGel School ';
                                 }
                               },
-                              hintText: "ادخل رابط GooGel School",
-                              labelText: " ابحاثى",
+                              hintText: "أدخل رابط GooGel School",
+                              labelText: " أبحاثى",
                               scure: false,
                             )),
                       ),
@@ -402,7 +402,7 @@ class _CreateMemberProfileState extends State<CreateMemberProfile> {
                             formatInput: true,
                             validator: (value) {
                               if (value!.isEmpty) {
-                                return 'الرجاء ادخال رقم الهاتف';
+                                return 'الرجاء إدخال رقم الهاتف';
                               }
                             },
                             keyboardType: const TextInputType.numberWithOptions(
@@ -431,7 +431,7 @@ class _CreateMemberProfileState extends State<CreateMemberProfile> {
                 padding:
                     const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                 child: Text(
-                  'المج ت',
+                  'المجالات العلمية',
                   style: labelStyle3,
                 ),
               ),
@@ -483,7 +483,7 @@ class _CreateMemberProfileState extends State<CreateMemberProfile> {
                     size: 20,
                   ),
                   label: Text(
-                    'اضافة مجال',
+                    'إضافة مجال',
                     style: hintStyle4,
                   )),
               const Divider(
