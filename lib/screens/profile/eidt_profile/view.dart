@@ -544,7 +544,7 @@ class _EditProfileState extends State<EditProfile> {
                       Padding(
                         padding: const EdgeInsets.only(right: 20, top: 20),
                         child: Text(
-                          "هل تقبل  شراف على  الرس ت؟",
+                          "هل تقبل شراف على الرسلات؟",
                           style: labelStyle3,
                         ),
                       ),

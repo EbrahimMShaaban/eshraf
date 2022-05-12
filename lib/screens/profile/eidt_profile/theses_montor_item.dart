@@ -45,7 +45,7 @@ class _ThesesGraduatedMontorItemState extends State<ThesesGraduatedMontorItem> {
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
           child: Text(
-            "االرس ت تحت اشرافك :",
+            "االرسلات تحت اشرافك :",
             style: labelStyle3,
           ),
         ),
@@ -98,7 +98,7 @@ class _ThesesGraduatedMontorItemState extends State<ThesesGraduatedMontorItem> {
                                                 MainAxisAlignment.spaceEvenly,
                                             children: [
                                               Text(
-                                                'اسم   رسالة : ${snapshot.data!.docs[index]['nameTheses']}',
+                                                'اسم رسالة : ${snapshot.data!.docs[index]['nameTheses']}',
                                                 style: hintStyle5
                                               ),
                                               Text(
@@ -135,7 +135,7 @@ class _ThesesGraduatedMontorItemState extends State<ThesesGraduatedMontorItem> {
                                   child: IconButton(
                                     onPressed: () {
                                       editTheses(context,
-                                          text: 'تعديل ا رسالة',
+                                          text: 'تعديل ارسالة',
                                           key: key,
                                           indexed:
                                               snapshot.data!.docs[index].id,
@@ -199,14 +199,14 @@ class _ThesesGraduatedMontorItemState extends State<ThesesGraduatedMontorItem> {
           ],
         ),
         ButtonUser(
-            text: "اضافة ا رسالة",
+            text: "اضافة ارسالة",
             color: blueGradient,
             onTap: () {
               print(widget.college);
               print(widget.department);
               showDialogTheses(
                 context,
-                text: 'إضافة ا رسالة',
+                text: 'إضافة ارسالة',
                 department:widget.department!,
                college: widget.college!);
             }),

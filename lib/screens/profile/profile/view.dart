@@ -360,13 +360,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                         isScrollable: true,
                                         tabs: const <Widget>[
                                           Tab(
-                                            text: 'المج ت',
+                                            text: 'المجلات',
                                           ),
                                           Tab(
-                                            text: ' الرس ت\nالمكتملة',
+                                            text: ' الرسلات\nالمكتملة',
                                           ),
                                           Tab(
-                                            text: ' الرس ت \nالجارية',
+                                            text: ' الرسلات \nالجارية',
                                           ),
                                           Tab(
                                             text: 'المشاريع\n المكتملة',
