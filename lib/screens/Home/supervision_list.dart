@@ -71,11 +71,11 @@ class _SupervisionListState extends State<SupervisionList> {
                                    MainAxisAlignment.spaceEvenly,
                                    children: [
                                      Text(
-                                       'اسم   رسالة: '+snapshot.data!.docs[index]['name'],
+                                       'اسم الرسالة: '+snapshot.data!.docs[index]['name'],
                                        style: labelStyle3,
                                      ),
                                      Text(
-                                       'تفاصيل   رسالة:'+snapshot.data!.docs[index]['description'],
+                                       'تفاصيل الرسالة:'+snapshot.data!.docs[index]['description'],
                                        style: hintStyle3,
                                      ),
                                    ],
