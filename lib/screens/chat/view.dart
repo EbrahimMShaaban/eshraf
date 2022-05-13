@@ -108,7 +108,7 @@ class _ChatScreenState extends State<ChatScreen> {
                         ontapicon: () async {
                           await showDialogWarning(
                             context,
-                            text: 'هل انت متاكد من حذف المحادثة؟',
+                            text: 'هل انت متأكد من حذف المحادثة؟',
                             ontap: () async {
                               await FirebaseFirestore.instance
                                   .collection('member')

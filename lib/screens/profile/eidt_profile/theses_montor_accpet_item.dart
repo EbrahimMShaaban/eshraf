@@ -24,7 +24,7 @@ var val;
         Padding(
           padding: const EdgeInsets.only(right: 20,top: 20),
           child: Text(
-            "هل تقبل  شراف على  الرس ت؟",
+            "هل تقبل الإشراف على الرسائل العلمية ؟",
             style: labelStyle3,
           ),),
         Padding(

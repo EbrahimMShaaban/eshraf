@@ -93,7 +93,7 @@ class ProjectItem extends StatelessWidget {
                                                 style: hintStyle5,
                                               ),
                                               Text(
-                                                ' عضاء ${snapshot.data!.docs[index]['memberProjectName']}',
+                                                ' الأعضاء ${snapshot.data!.docs[index]['memberProjectName']}',
                                                 style: hintStyle5,
                                               ),
                                             ],
@@ -139,7 +139,7 @@ class ProjectItem extends StatelessWidget {
                                   child: IconButton(
                                     onPressed: () async {
                                       await showDialogWarning(context,
-                                          text: 'هل انت متاكد من الحذف ',
+                                          text: 'هل أنت متاكد من الحذف ',
                                           ontap: () async {
                                             await FirebaseFirestore.instance
                                                 .collection('project')
@@ -171,7 +171,7 @@ class ProjectItem extends StatelessWidget {
           ],
         ),
         ButtonUser(
-            text: "اضافة مشروع",
+            text: "إضافة مشروع",
             color: blueGradient,
             onTap: () {
               showDialogProject(
@@ -264,11 +264,11 @@ void editProject(BuildContext context,
 
                     validator: (value) {
                       if (value.isEmpty) {
-                        return 'برجاءادخال اسماء  عضاء ';
+                        return 'برجاءادخال اسماء الأعضاء ';
                       }
                     },
-                    hintText: 'اسم  عضاء',
-                    labelText: " عضاء",
+                    hintText: 'اسم الأعضاء',
+                    labelText: "الأعضاء",
                     scure: false,
 
                   ),
@@ -353,7 +353,7 @@ void editProject(BuildContext context,
                 Navigator.pop(context);
               }),
           ButtonUser(
-              text: 'أضافة',
+              text: 'إضافة',
               color: blueGradient,
               onTap: () async {
                 if (keys.currentState!.validate()) {

@@ -45,7 +45,7 @@ class _ThesesGraduatedMontorItemState extends State<ThesesGraduatedMontorItem> {
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
           child: Text(
-            "االرسلات تحت اشرافك :",
+            "الرسائل المشرف عليها :",
             style: labelStyle3,
           ),
         ),
@@ -98,7 +98,7 @@ class _ThesesGraduatedMontorItemState extends State<ThesesGraduatedMontorItem> {
                                                 MainAxisAlignment.spaceEvenly,
                                             children: [
                                               Text(
-                                                'اسم رسالة : ${snapshot.data!.docs[index]['nameTheses']}',
+                                                'اسم الرسالة : ${snapshot.data!.docs[index]['nameTheses']}',
                                                 style: hintStyle5
                                               ),
                                               Text(
@@ -135,7 +135,7 @@ class _ThesesGraduatedMontorItemState extends State<ThesesGraduatedMontorItem> {
                                   child: IconButton(
                                     onPressed: () {
                                       editTheses(context,
-                                          text: 'تعديل ارسالة',
+                                          text: 'تعديل الرسالة',
                                           key: key,
                                           indexed:
                                               snapshot.data!.docs[index].id,
@@ -199,14 +199,14 @@ class _ThesesGraduatedMontorItemState extends State<ThesesGraduatedMontorItem> {
           ],
         ),
         ButtonUser(
-            text: "اضافة ارسالة",
+            text: "اضافة رسالة",
             color: blueGradient,
             onTap: () {
               print(widget.college);
               print(widget.department);
               showDialogTheses(
                 context,
-                text: 'إضافة ارسالة',
+                text: 'إضافة رسالة',
                 department:widget.department!,
                college: widget.college!);
             }),
@@ -261,12 +261,12 @@ void editTheses(
                 children: [
                   EidtTextFieldUser(
                    controller: nameTheses1,
-                    hintText: 'اسم   رسالة',
-                    labelText: "اسم   رسالة",
+                    hintText: 'اسم الرسالة',
+                    labelText: "اسم الرسالة",
                     scure: false,
                     validator: (value) {
                       if (value.isEmpty) {
-                        return 'برجاءادخال اسم   رسالة ';
+                        return 'برجاءادخال اسم الرسالة ';
                       }
                     },
 
@@ -275,11 +275,11 @@ void editTheses(
                      controller: linkTheses1,
                     validator: (value) {
                       if (value.isEmpty) {
-                        return 'برجاءادخال رابط   رسالة ';
+                        return 'برجاءادخال رابط الرسالة ';
                       }
                     },
-                    hintText: 'رابط   رسالة',
-                    labelText: 'رابط   رسالة',
+                    hintText: 'رابط الرسالة',
+                    labelText: 'رابط الرسالة',
                     scure: false,
 
                   ),
@@ -370,7 +370,7 @@ void editTheses(
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
                         Text(
-                          'حالة   رسالة',
+                          'حالة الرسالة',
                           style: labelStyle3,
                         ),
                         Directionality(
@@ -378,7 +378,7 @@ void editTheses(
                           child: SizedBox(
                             child: DropdownButton<String>(
                               hint: Text(
-                                'اختر حالة   رسالة',
+                                'اختر حالة الرسالة',
                                 style: hintStyle,
                               ),
                               value: thesesStatus,
@@ -430,7 +430,7 @@ void editTheses(
                 Navigator.pop(context);
               }),
           ButtonUser(
-              text: 'أضافة',
+              text: 'إضافة',
               color: blueGradient,
               onTap: () async {
                 print(indexed);

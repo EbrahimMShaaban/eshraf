@@ -19,7 +19,7 @@ class _AcceptSupervisionState extends State<AcceptSupervision> {
         Padding(
           padding: const EdgeInsets.only(right: 20, top: 20),
           child: Text(
-            "هل تقبل الإشراف عل الرسائل ؟",
+            "هل تقبل الإشراف عل الرسائل العلمية ؟",
             style: labelStyle3,
           ),
         ),

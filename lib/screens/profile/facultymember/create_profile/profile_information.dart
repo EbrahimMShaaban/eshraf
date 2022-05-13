@@ -71,7 +71,7 @@ class _ProfileInformationState extends State<ProfileInformation> {
                       },
                       validator: (value) {
                         if (value.isEmpty) {
-                          return 'برجاء ادخال  سم ';
+                          return 'برجاء ادخال الاسم ';
                         }
                       },
                       labelText: 'اسم الباحث',
@@ -192,10 +192,10 @@ class _ProfileInformationState extends State<ProfileInformation> {
                     },
                     validator: (value) {
                       if (value.isEmpty) {
-                        return 'برجاءادخال رابط GooGel School ';
+                        return 'برجاءادخال رابط Git Hub ';
                       }
                     },
-                    hintText: "ادخل رابط GooGel School",
+                    hintText: "ادخل رابط Git Hub",
                     labelText: " ابحاثى",
                     scure: false,
                   )),

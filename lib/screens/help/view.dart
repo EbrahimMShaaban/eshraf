@@ -75,7 +75,7 @@ class _HelpScreenState extends State<HelpScreen> {
 
                    validator: (val){
                      if(val.isEmpty){
-                      return 'يجب ادخال عنوان المشكلة' ;
+                      return 'يجب إدخال عنوان المشكلة' ;
                      }
                    },
                      controller: problemTitleController,
@@ -111,7 +111,7 @@ class _HelpScreenState extends State<HelpScreen> {
                           await AwesomeDialog(
                               context: context,
                               title: "هام",
-                              body: const Text("تم  رسال بنجاح"),
+                              body: const Text("تم الإرسال بنجاح"),
                               dialogType: DialogType.SUCCES)
                             .show();
                           Navigator.pop(context);

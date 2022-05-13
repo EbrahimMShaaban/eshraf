@@ -17,7 +17,7 @@ class _SupervisionListState extends State<SupervisionList> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: white,
-        title: Text('طلبات  شراف',
+        title: Text('طلبات الإشراف',
             style: GoogleFonts.cairo(
               textStyle: const TextStyle(
                   color: blue, fontWeight: FontWeight.bold, fontSize: 28),

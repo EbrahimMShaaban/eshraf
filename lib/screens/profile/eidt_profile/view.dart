@@ -267,7 +267,7 @@ class _EditProfileState extends State<EditProfile> {
                                 if (value.isEmpty) {
                                   return 'يجب ادخال اسم الباحث';
                                 } else if (value.length < 2) {
-                                  return 'يجب ان يحتوي  سم علي ثلاث حروف علي  قل';
+                                  return 'يجب ان يحتوي الاسم علي ثلاثة حروف علي الأقل';
                                 }
                                 return null;
                               }, // initialValue: name,
@@ -459,7 +459,7 @@ class _EditProfileState extends State<EditProfile> {
                             },
                             validator: (value) {
                               if (value.isEmpty) {
-                                return 'برجاءادخال ادخل رابط GitHub ';
+                                return 'برجاءادخال رابط GitHub ';
                               }
                             },
                             controller: link,
@@ -544,7 +544,7 @@ class _EditProfileState extends State<EditProfile> {
                       Padding(
                         padding: const EdgeInsets.only(right: 20, top: 20),
                         child: Text(
-                          "هل تقبل شراف على الرسلات؟",
+                          "هل تقبل الإشراف على لارسائل العلمية ؟",
                           style: labelStyle3,
                         ),
                       ),
@@ -623,7 +623,7 @@ class _EditProfileState extends State<EditProfile> {
                     children: [
                       // add button
                       ButtonUser(
-                          text: 'حفظ التغيرات',
+                          text: 'حفظ التغييرات',
                           color: blueGradient,
                           onTap: () async {
                             showDialogWarning(context, ontap: () async {

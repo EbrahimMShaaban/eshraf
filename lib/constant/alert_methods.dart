@@ -76,15 +76,15 @@ void showDialogTheses(
               child: Column(
                 children: [
                   TextFieldUser(
-                    hintText: 'اسم   رسالة',
-                    labelText: "اسم   رسالة",
+                    hintText: 'اسم الرسالة',
+                    labelText: "اسم الرسالة",
                     scure: false,
                     onChanged: (val) {
                       prov.nameTheses = val;
                     },
                     validator: (value) {
                       if (value.isEmpty) {
-                        return 'الرجاءادخال اسم   رسالة ';
+                        return 'الرجاءإدخال اسم الرسالة ';
                       }
                     },
                   ),
@@ -94,11 +94,11 @@ void showDialogTheses(
                       },
                       validator: (value) {
                         if (value.isEmpty) {
-                          return 'الرجاءادخال رابط   رسالة ';
+                          return 'الرجاءادخال رابط الرسالة ';
                         }
                       },
-                      hintText: 'رابط   رسالة',
-                      labelText: 'رابط   رسالة',
+                      hintText: 'رابط الرسالة',
+                      labelText: 'رابط الرسالة',
                       scure: false),
                   TextFieldUser(
                       onChanged: (val) {
@@ -106,7 +106,7 @@ void showDialogTheses(
                       },
                       validator: (value) {
                         if (value.isEmpty) {
-                          return 'الرجاءادخال اسماء المشرفين  ';
+                          return 'الرجاءإدخال أسماء المشرفين  ';
                         }
                       },
                       hintText: 'اسم المشرف',
@@ -118,10 +118,10 @@ void showDialogTheses(
                       },
                       validator: (value) {
                         if (value.isEmpty) {
-                          return 'الرجاءادخال اسماء المشرفين المساعدين ';
+                          return 'الرجاءادخال أسماء المشرفين المساعدين ';
                         }
                       },
-                      hintText: 'اسماء المشرفين المساعدين',
+                      hintText: 'أسماء المشرفين المساعدين',
                       labelText: "المشرفون المساعدون",
                       scure: false),
                   Padding(
@@ -185,7 +185,7 @@ void showDialogTheses(
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
                         Text(
-                          'حالة   رسالة',
+                          'حالة الرسالة',
                           style: labelStyle3,
                         ),
                         Directionality(
@@ -193,7 +193,7 @@ void showDialogTheses(
                           child: SizedBox(
                             child: DropdownButton<String>(
                               hint: Text(
-                                'اختر حالة   رسالة',
+                                'اختر حالة الرسالة',
                                 style: hintStyle,
                               ),
                               value: prov.thesesStatus,
@@ -246,7 +246,7 @@ void showDialogTheses(
                 Navigator.pop(context);
               }),
           ButtonUser(
-              text: 'أضافة',
+              text: 'إضافة',
               color: blueGradient,
               onTap: () async {
                 print(auth.usertype);
@@ -267,7 +267,7 @@ void showDialogTheses(
                   AwesomeDialog(
                           context: context,
                           title: "هام",
-                          body: const Text("تمت عملية  ضافة بنجاح"),
+                          body: const Text("تمت عملية الإضافة بنجاح"),
                           dialogType: DialogType.SUCCES)
                       .show();
                 }
@@ -310,7 +310,7 @@ void showDialogProject(
                       },
                       validator: (value) {
                         if (value.isEmpty) {
-                          return 'الرجاءادخال اسم المشروع ';
+                          return 'الرجاءإدخال اسم المشروع ';
                         }
                       },
                       hintText: 'اسم المشروع',
@@ -322,7 +322,7 @@ void showDialogProject(
                       },
                       validator: (value) {
                         if (value.isEmpty) {
-                          return 'الرجاءادخال وصف المشروع ';
+                          return 'الرجاءإدخال وصف المشروع ';
                         }
                       },
                       hintText: 'وصف المشروع',
@@ -346,11 +346,11 @@ void showDialogProject(
                       },
                       validator: (value) {
                         if (value.isEmpty) {
-                          return 'الرجاءادخال اسماء  عضاء ';
+                          return 'الرجاءادخال أسماء الأعضاء ';
                         }
                       },
-                      hintText: 'اسم  عضاء',
-                      labelText: " عضاء",
+                      hintText: 'أسماء الأعضاء',
+                      labelText: " الأعضاء",
                       scure: false),
                   TextFieldUser(
                       onChanged: (val) {
@@ -431,7 +431,7 @@ void showDialogProject(
                 Navigator.pop(context);
               }),
           ButtonUser(
-              text: 'أضافة',
+              text: 'إضافة',
               color: blueGradient,
               onTap: () async {
                 if (prov.formkey.currentState!.validate()) {
@@ -452,7 +452,7 @@ void showDialogProject(
                   AwesomeDialog(
                       context: context,
                       title: "هام",
-                      body: const Text("تمت عملية  ضافة بنجاح"),
+                      body: const Text("تمت عملية الإضافة بنجاح"),
                       dialogType: DialogType.SUCCES)
                       .show();
                 }

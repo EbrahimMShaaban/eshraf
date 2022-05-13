@@ -73,7 +73,7 @@ class _InformationItemState extends State<InformationItem> {
                 onChanged: (val) {},
                 controller: name,
                 labelText: "اسم الباحث",
-                hintText: "أسمك",
+                hintText: "اسمك",
                 scure: false,
                 validator: (value) {
                   if (value.isEmpty) {
@@ -156,7 +156,7 @@ class _InformationItemState extends State<InformationItem> {
                 }
               },
               controller: phone,
-              hintText: "+96655...",
+              hintText: "+2010...",
               labelText: "رقم الهاتف",
               scure: false,
               // initialValue: phone,
@@ -197,7 +197,7 @@ class _InformationItemState extends State<InformationItem> {
               },
               controller: link,
               hintText: "ادخل رابط GooGel School",
-              labelText: " ابحاثى",
+              labelText: "أبحاثى",
               scure: false,
               // initialValue: link,
             ),

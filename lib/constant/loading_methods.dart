@@ -7,7 +7,7 @@ showLoading(context) {
         return AlertDialog(
           title: const Directionality(
             textDirection: TextDirection.rtl,
-              child:  Text("برجاء الا نتظار")),
+              child:  Text("برجاء الانتظار")),
           // ignore: sized_box_for_whitespace
           content: Container(
               height: 50,
