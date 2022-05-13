@@ -97,7 +97,7 @@ class _ThesesBookMarkState extends State<ThesesBookMark> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    "اسم   رسالة: " + theses.nameTheses!,
+                    "اسم الرسالة: " + theses.nameTheses!,
 
                     style: labelStyle3,
                   ),
