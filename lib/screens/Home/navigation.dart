@@ -18,7 +18,8 @@ class NavigationFile extends StatefulWidget {
       HomeScreen(c: d, ),
       const ProjectScreen(),
       const ThesesScreen(),
-      const SeminarScreen() ,   ];
+      const SeminarScreen() ,
+    ];
   }
   @override
   _NavigationFileState createState() => _NavigationFileState();
